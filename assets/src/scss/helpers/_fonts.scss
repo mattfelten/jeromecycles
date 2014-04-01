@@ -1,0 +1,21 @@
+@font-face {
+	font-family: 'Workaday';
+	src: url('../fonts/workaday-regular-webfont.eot');
+	src: url('../fonts/workaday-regular-webfont.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/workaday-regular-webfont.woff') format('woff'),
+		url('../fonts/workaday-regular-webfont.ttf') format('truetype'),
+		url('../fonts/workaday-regular-webfont.svg#workadayregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Workaday';
+	src: url('../fonts/workaday-bold-webfont.eot');
+	src: url('../fonts/workaday-bold-webfont.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/workaday-bold-webfont.woff') format('woff'),
+		url('../fonts/workaday-bold-webfont.ttf') format('truetype'),
+		url('../fonts/workaday-bold-webfont.svg#workadaybold') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}

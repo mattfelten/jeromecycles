@@ -1,0 +1,12 @@
+@mixin btn {
+	color: $black;
+	border: .18em solid $black;
+	border-radius: .34em;
+	padding: .55em 1em;
+	text-decoration: none;
+
+	&:hover {
+		color: $purple;
+		border-color: $purple;
+	}
+}
