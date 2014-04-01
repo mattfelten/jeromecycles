@@ -1,0 +1,129 @@
+@import "bourbon";
+@import "helpers";
+@import "normalize";
+
+$black: #111;
+$white: #fcfcfc;
+$grey: #8c8c8c;
+$purple: #814AB5;
+
+$basesize: 16px;
+@function typescale ($level: 1) {
+	$typescale: 1.414;
+	$mult: 1;
+
+	@if $level == 2 {
+		$mult: 1.414;  // 22
+	} @else if $level == 3 {
+		$mult: 1.999;  // 32
+	} @else if $level == 4 {
+		$mult: 2.827;  // 45
+	} @else if $level == 5 {
+		$mult: 3.998;  // 63
+	} @else if $level == 6 {
+		$mult: 5.653;  //90
+	}
+
+	@return $mult * $basesize;
+}
+
+@mixin btn {
+	color: $black;
+	border: .18em solid $black;
+	border-radius: .34em;
+	padding: .55em 1em;
+	text-decoration: none;
+
+	&:hover {
+		color: $purple;
+		border-color: $purple;
+	}
+}
+
+html {
+	background: $white;
+	color: $black;
+	font: #{$basesize} / 1.4 'Workaday', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+section {
+	max-width: 780px;
+	margin: 100px auto;
+	padding: 0 20px;
+	text-align: center;
+}
+
+h1, h2, h3 {
+	border-bottom: .18em solid $black;
+	display: inline-block;
+}
+
+h1 {
+	font-size: typescale(4);
+}
+
+h2 {
+	font-size: typescale(3)
+}
+
+h3 {
+	font-size: typescale(2);
+}
+
+p {
+	margin: 1.4em 0;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+#buy {
+	a {
+		@include btn;
+		font-size: typescale(2);
+	}
+
+	p {
+		color: $grey;
+		margin-top: 2em;
+	}
+}
+
+#bio {
+	div {
+		margin: 2em 0 0;
+		text-align: left;
+	}
+
+	p {
+		margin-top: 0
+	}
+}
+
+@media (min-width: 600px) {
+	#bio div {
+		@include columns(2);
+		@include column-gap(90px);
+	}
+}
+
+#social {
+	ul {
+		@include nolist;
+	}
+
+	li {
+		display: inline-block;
+		margin: 0 22px;
+	}
+
+	.svg {
+		fill: $grey;
+
+		&:hover {
+			fill: $purple;
+		}
+	}
+}

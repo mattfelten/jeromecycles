@@ -1,0 +1,6 @@
+default:
+  - 'newer:sass'
+  - 'newer:concat'
+  - 'newer:uglify'
+  - 'newer:imagemin'
+  - 'watch'

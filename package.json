@@ -1,0 +1,14 @@
+{
+	"devDependencies": {
+		"grunt": "~0.4.2",
+		"grunt-contrib-concat": "*",
+		"grunt-contrib-uglify": "*",
+		"grunt-contrib-watch": "*",
+		"grunt-contrib-imagemin": "*",
+		"grunt-contrib-sass": "*",
+		"node-bourbon": "*",
+		"node-neat": "*",
+		"load-grunt-config": "*",
+		"grunt-newer": "*"
+	}
+}
