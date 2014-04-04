@@ -49,8 +49,7 @@ img {
 }
 
 #buy {
-	a {
-		@include btn;
+	.button {
 		font-size: typescale(2);
 	}
 
@@ -79,8 +78,13 @@ img {
 }
 
 #social {
+	.button {
+		font-size: typescale(2);
+	}
+
 	ul {
 		@include nolist;
+		margin-top: 3em;
 	}
 
 	li {
