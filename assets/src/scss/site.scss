@@ -29,11 +29,11 @@ h1, h2, h3 {
 h1 {
 	font-size: typescale(4);
 	margin: 0;
-	white-space: nowrap;
+.	white-space: nowrap;
 }
 
 h2 {
-	font-size: typescale(3)
+	font-size: typescale(3);
 }
 
 h3 {
@@ -51,6 +51,24 @@ img {
 
 #title {
 	margin: 60px auto 40px;
+}
+
+#logo1,
+#logo2 {
+	@include hide-text;
+	display: inline-block;
+}
+
+#logo1 {
+	background-image: url(../images/logo1.png);
+	width: 443px;
+	height: 160px;
+}
+
+#logo2 {
+	background-image: url(../images/logo2.png);
+	width: 310px;
+	height: 257px;
 }
 
 #buy {
