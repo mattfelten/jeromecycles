@@ -62,28 +62,14 @@ img {
 }
 
 #hero {
-	position: relative;
+	visibility: hidden;
+
+	&.visible {
+		visibility: visible;
+	}
 
 	img {
-		border-bottom: 10px solid #ccc;
-		border-right: 10px solid #eee;
 		display: block;
-	}
-
-	&:before {
-		content: '';
-		@include triangle(10px, $white, down-left);
-		position: absolute;
-		bottom: 0;
-		left: 20px;
-	}
-
-	&:after {
-		content: '';
-		@include triangle(10px, $white, up-right);
-		position: absolute;
-		top: 0;
-		right: 10px;
 	}
 }
 
