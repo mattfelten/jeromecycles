@@ -51,7 +51,14 @@ img {
 }
 
 #title {
-	margin: 60px auto 40px;
+	background: url(../images/bg.blue.jpg) center center;
+	box-shadow: 0 1px 4px rgba(0,0,0,.1);
+	margin: 0 auto;
+	max-width: none;
+	padding: 40px 0;
+	position: relative;
+	width: 100%;
+	z-index: 2;
 }
 
 #logo {
@@ -66,6 +73,11 @@ img {
 	max-width: 900px;
 	padding: 0;
 	position: relative;
+	z-index: 1;
+
+	@media (max-width: 900px) {
+		margin-top: 0;
+	}
 
 	ul {
 		@include nolist;
