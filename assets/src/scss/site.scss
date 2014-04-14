@@ -55,10 +55,15 @@ img {
 	box-shadow: 0 1px 4px rgba(0,0,0,.2);
 	margin: 0 auto;
 	max-width: none;
-	padding: 40px 0;
+	padding: 0;
 	position: relative;
 	width: 100%;
 	z-index: 2;
+
+	.wrap {
+		background: url(../images/bg.border.png) no-repeat center top;
+		padding: 40px 0;
+	}
 }
 
 #logo {
