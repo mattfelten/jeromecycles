@@ -51,7 +51,7 @@ img {
 }
 
 #title {
-	background: url(../images/bg.blue.jpg) center center;
+	background: #313133 url(../images/bg.black.jpg) center center;
 	box-shadow: 0 1px 4px rgba(0,0,0,.1);
 	margin: 0 auto;
 	max-width: none;
@@ -63,10 +63,11 @@ img {
 
 #logo {
 	@include hide-text;
-	display: inline-block;
+	display: block;
 	background-image: url(../images/logo.png);
 	width: 310px;
 	height: 257px;
+	margin: 0 auto;
 }
 
 #hero {
