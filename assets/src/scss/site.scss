@@ -7,6 +7,7 @@
 
 @import "helpers/normalize";
 @import "helpers/fonts";
+@import "responsiveslides.css";
 
 html {
 	background: $white;
@@ -62,14 +63,25 @@ img {
 }
 
 #hero {
-	visibility: hidden;
+	max-width: none;
+	padding: 0;
+	position: relative;
+	width: 100%;
 
-	&.visible {
-		visibility: visible;
+	ul {
+		@include nolist;
+		@include clearfix;
+		width: 100%;
+	}
+
+	li {
+		width: 100%;
 	}
 
 	img {
 		display: block;
+		min-width: 100%;
+		height: auto;
 	}
 }
 
