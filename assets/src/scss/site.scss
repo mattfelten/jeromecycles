@@ -84,8 +84,9 @@ img {
 
 #logo {
 	@include hide-text;
+	@include retina-image('../images/logo', 310px 257px, png, '../images/logo.2x');
+	border: none;
 	display: block;
-	background-image: url(../images/logo.png);
 	width: 310px;
 	height: 257px;
 	margin: 0 auto;
