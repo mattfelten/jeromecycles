@@ -1,0 +1,14 @@
+# Jekyll Config
+markdown: redcarpet
+
+# Server Config
+host: jeromecycles.dev
+
+# Site Config
+title: Jerome Cycles
+url: http://jeromecycles.com
+
+# Sass Config
+sass:
+  sass_dir: assets/_scss
+  style: compressed
