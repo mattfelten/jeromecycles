@@ -73,11 +73,11 @@ img {
 
 #logo {
 	@include hide-text;
-	@include retina-image('../images/logo', 310px 257px, png, '../images/logo.2x');
+	@include retina-image('../images/logo', 258px 214px, png, '../images/logo.2x');
 	border: none;
 	display: block;
-	width: 310px;
-	height: 257px;
+	width: 258px;
+	height: 214px;
 	margin: 0 auto;
 }
 
